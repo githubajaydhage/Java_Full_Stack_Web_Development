@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        function verifyUser() {
+            let user = document.getElementById("u1").value;
+            let pass = document.getElementById("p1").value;
+            if(user.length==0){
+            alert("User name is required")
+                return false;
+            }else if(pass.length==0){
+                alert("Password is required")
+                return false;
+            }else if(user=="Ajay" && pass=="123"){
+             alert("success")
+                return true;
+            }else {
+              alert("failure")
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>This is my simple web page</h2>
+    <form action="welcome.html" onsubmit="return verifyUser()">
+        <label>UserName</label>
+        <input type="text" name="user" id="u1"/><br/>
+        <label>Password</label>
+        <input type="password" name="pass" id="p1"/><br/>
+        <input type="submit" value="submit" id="b1"/>
+        <input type="reset" value="reset"/>
+    </form>
+</body>
+</html>

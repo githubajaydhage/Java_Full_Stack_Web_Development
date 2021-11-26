@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Images</th>
+            <th>Category</th>
+            <th>Rate</th>
+            <th>Count</th>
+        </tr>
+        <tr *ngFor="let pp of products">
+                <td>{{pp.id}}</td>
+                <td>{{pp.title}}</td>
+                <td><img src={{pp.image}} width="200px" height="200px"/></td>
+                <td>{{pp.category}}</td>
+                <td>{{pp.rating.rate}}</td>
+                <td>{{pp.rating.count}}</td>
+        </tr>
+    </table>
+</div>

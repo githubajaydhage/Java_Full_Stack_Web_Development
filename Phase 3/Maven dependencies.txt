@@ -1,0 +1,102 @@
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+my sql dependencies 
+
+
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.14</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.5.4.Final</version>
+</dependency>
+
+Core 
+
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.2.12.RELEASE</version>
+</dependency>
+
+Context 
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.2.12.RELEASE</version>
+</dependency>
+
+Spring JDBC 
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-jdbc</artifactId>
+    <version>5.2.12.RELEASE</version>
+</dependency>
+
+
+
+
+Spring MVC 
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.2.12.RELEASE</version>
+</dependency>
+
+
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>5.2.12.RELEASE</version>
+</dependency>
+
+Basic Starter 
+
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter</artifactId>
+    <version>2.5.0</version>
+</dependency>
+
+
+Web Starter 
+
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <version>2.5.0</version>
+</dependency>
+
+JDBC Starter 
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-jdbc</artifactId>
+    <version>2.5.0</version>
+</dependency>
+
+JPA Starter 
+
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+    <version>2.5.0</version>
+</dependency>

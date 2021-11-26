@@ -1,0 +1,59 @@
+<div>
+    <h2>Insert Product Details</h2>
+    <form #productRef="ngForm" (ngSubmit)="storeProduct(productRef)">
+        <label>PId</label>
+        <input type="text" name="pid" ngModel/><br/>
+        <label>PName</label>
+        <input type="text" name="pname" ngModel/><br/>
+        <label>Price</label>
+        <input type="text" name="price" ngModel/><br/>
+        <input type="submit" value="submit"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <br/>
+    {{insertMsg}}
+    <hr/>
+    <label>Min Price :</label> <input type="text" #min/>
+    <label>Max Price :</label> <input type="text" #max/>
+    <input type="button" value="Search Product" (click)="seachProduct(min,max)"/>
+    <hr/>
+    <input type="button" value="Reset Filter" (click)="retrieveAllProducts()"/>
+    <hr/>
+    <table border="1">
+            <tr>
+                <th>PId</th>
+                <th>PName</th>
+                <th>Price</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+            <tr *ngFor="let product of products">
+                    <td>{{product.pid}}</td>
+                    <td>{{product.pname}}</td>
+                    <td>{{product.price}}</td>
+                    <td><input type="button" value="Delete" (click)="deleteRecord(product.pid)"/></td>
+                    <td><input type="button" value="Update" (click)="updateRec(product)"/></td>
+            </tr>
+    </table>
+    <br/>
+    {{deleteMsg}}
+    <hr/>
+    <div *ngIf="flag">
+            <h2>Update Product Price</h2>
+            <form (ngSubmit)="updateDbRecord()">
+                <label>PId</label>
+                <input type="text" name="updateId" [(ngModel)]="updateId" readonly/><br/>
+                <label>Price</label>
+                <input type="text" name="updatePrice" [(ngModel)]="updatePrice"/><br/>
+                <input type="submit" value="Update Product"/>
+                <input type="reset" value="reset"/>
+            </form>
+    </div>
+    <br/>
+    {{updateMsg}}
+    <hr/>
+   <select #pid (click)="fun(pid)">
+       <option *ngFor="let product of products" value={{product.pid}}>{{product.pid}}</option>
+   </select>
+
+</div>

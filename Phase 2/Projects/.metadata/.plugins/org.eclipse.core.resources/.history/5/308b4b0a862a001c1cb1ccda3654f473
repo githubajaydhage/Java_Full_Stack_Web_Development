@@ -1,0 +1,25 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
+
+import com.bean.Student;
+
+public class StudentDao {
+
+	public int storeStudentRecord(Student student) {
+		try {
+			Class.forName("com.mysql.jdbc.cj.Driver");
+			Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "root@123");
+			//Statement stmt = con.createStatement();
+			PreparedStatement pstmt = con.prepareStatement("insert into student values(?,?,?)");
+			pstmt.setInt(1,student.getSid());
+			pstmt.setString(2, student.getName());
+			pstmt.setInt(3, student.getAge());
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

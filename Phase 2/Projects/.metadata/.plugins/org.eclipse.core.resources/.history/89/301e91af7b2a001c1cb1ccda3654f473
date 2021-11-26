@@ -1,0 +1,14 @@
+package com;
+
+public class DemoTest {
+
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");		// mysql 
+			//Class.forName("oracle.jdbc.driver.OracleDriver");   // oracle 
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}

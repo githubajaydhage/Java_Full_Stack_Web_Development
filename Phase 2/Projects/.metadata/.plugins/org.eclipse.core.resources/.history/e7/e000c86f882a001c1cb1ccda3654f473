@@ -1,0 +1,20 @@
+package com.main;
+
+import java.util.Scanner;
+
+import com.bean.Student;
+
+public class App {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the id");
+		int sid = sc.nextInt();
+		System.out.println("Enter the name");
+		String name = sc.next();
+		System.out.println("Enter the age");
+		int age = sc.nextInt();
+		Student ss = new Student(sid,name,age);
+	}
+
+}

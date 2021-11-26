@@ -1,0 +1,11 @@
+<div>
+    {{age}}
+    <h2>One way data binding using - property binding</h2>
+    Age :<input type="text" [value]="age"/>
+    <br/>
+    <p [innerText]="age"></p>
+    <br/>
+    <input type="button" value="Click here" disabled/>
+    <input type="button" value="Click here" disabled={{b1}}/>
+    <input type="button" value="Click here" [disabled]="b2"/>
+</div>

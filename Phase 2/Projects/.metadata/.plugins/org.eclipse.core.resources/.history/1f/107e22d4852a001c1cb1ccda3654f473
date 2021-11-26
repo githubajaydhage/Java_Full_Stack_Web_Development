@@ -1,0 +1,19 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import com.bean.Student;
+
+public class StudentDao {
+
+	public int storeStudentRecord(Student student) {
+		try {
+			Class.forName("com.mysql.jdbc.cj.Driver");
+			Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "root@123");
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

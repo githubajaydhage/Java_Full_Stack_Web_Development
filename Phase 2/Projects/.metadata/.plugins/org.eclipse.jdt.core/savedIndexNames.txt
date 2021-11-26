@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\91990\Desktop\Comviva Training\Phase 2\Projects\.metadata\.plugins\org.eclipse.jdt.core
+2126294611.index
+3637221820.index
+2596238947.index
+1508840873.index
+1070848005.index
